@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)file:///C:/Users/ADMIN/Documents/Lab%20Programs/lab1a.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Lab 1a</title>
+    <style>
+        .title {
+            margin: auto;
+            margin-top: 40px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            height: 70px;
+            width: 40%;
+            color: rgb(5, 5, 5);
+            background-color: rgb(170, 228, 243);
+            border: solid rgb(8, 8, 8) 1px;
+        }
+        
+        input[type="text"] {
+            border-radius: 5px;
+            text-align: center;
+            background-color: white;
+            width: 94%;
+        }
+        
+        input[type="button"] {
+            border-radius: 5px;
+            background-color: #3cb9eb;
+            color: black;
+            border-color: #84a6b3;
+            width: auto;
+        }
+        
+        table{
+            margin:auto;
+            width : 40%;
+            height: 40%;
+        }
+        
+        td,
+        th {
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function disp(val) {
+            document.getElementById('sdm').value += val;
+
+        }
+
+        function clr() {
+            document.getElementById('sdm').value = " ";
+        }
+
+        function solve() {
+            let x = document.getElementById('sdm').value;
+            let y = eval(x);
+            document.getElementById("sdm").value = y
+        }
+    </script>
+</head>
+
+<body>
+    <div class="title">JAVASCRIPT LAB PROGRAM <br>Shreya Shetty U(4su17cs090)</div>
+    <!--Ceate a table-->
+    <table border="3">
+
+        <tbody><tr>
+            <td>
+                <input type="button" value="CE" onclick="clr()">
+            </td>
+            <td colspan="3">
+                <input type="text" id="sdm">
+            </td>
+        </tr>
+        <!-- creating buttons and assign values to it-->
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="disp(&#39;7&#39;)">
+            </td>
+            <td>
+                <input type="button" value="8" onclick="disp(&#39;8&#39;)">
+            </td>
+            <td>
+                <input type="button" value="9" onclick="disp(&#39;9&#39;)">
+            </td>
+            <td>
+                <input type="button" value="/" onclick="disp(&#39;/&#39;)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="disp(&#39;4&#39;)">
+            </td>
+            <td>
+                <input type="button" value="5" onclick="disp(&#39;5&#39;)">
+            </td>
+            <td>
+                <input type="button" value="6" onclick="disp(&#39;6&#39;)">
+            </td>
+            <td>
+                <input type="button" value="*" onclick="disp(&#39;*&#39;)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="disp(&#39;1&#39;)">
+            </td>
+            <td>
+                <input type="button" value="2" onclick="disp(&#39;2&#39;)">
+            </td>
+            <td>
+                <input type="button" value="3" onclick="disp(&#39;3&#39;)">
+            </td>
+            <td>
+                <input type="button" value="-" onclick="disp(&#39;-&#39;)">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="0" onclick="disp(&#39;0&#39;)">
+            </td>
+            <td>
+                <input type="button" value="." onclick="disp(&#39;.&#39;)">
+            </td>
+
+            <td>
+                <input type="button" value="=" onclick="solve()">
+            </td>
+            <td>
+                <input type="button" value="+" onclick="disp(&#39;+&#39;)">
+            </td>
+        </tr>
+    </tbody></table>
+
+
+
+</body></html>
